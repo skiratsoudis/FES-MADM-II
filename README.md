@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17772188.svg)](https://doi.org/10.5281/zenodo.17772188)
+
 📘 FES-MADM II
 Fuzzy Entropy–Synergy Multi-Attribute Decision-Making Model (Version 1.0.0)
 
