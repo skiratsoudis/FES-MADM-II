@@ -46,35 +46,43 @@ The implementation provided here includes:
 * structured Excel output export;
 * standalone manuscript figure reproduction.
 
-## Repository contents
+## ## Repository contents
 
 ```text
-FES_MADM_II_APP_V1_1_0.R
-Main R/Shiny implementation of the FES-MADM II model.
+FES-MADM-II/
 
-FESMADM2_CaseStudy_LPI_a0_v1_1_0.xlsx
-Output file for the LPI case study at α = 0.
+├── scripts/
+│   ├── FES_MADM_II_APP_V1_1_0.R
+│   │   Main R/Shiny implementation of the FES-MADM II model.
+│   │
+│   ├── FES_MADM_II_all_figures_standalone_v1_1_0.R
+│   │   Standalone R script with embedded data for reproducing all manuscript figures
+│   │   except the conceptual workflow diagram.
+│   │
+│   └── FESMADM2_Fuzzy_TOPSIS_Benchmark_standalone_v1_1_0.R
+│       Standalone R script with embedded data for the fuzzy TOPSIS benchmark.
+│
+├── data/
+│   ├── input/
+│   │   ├── FESMADM2_CaseStudy_LPI_a0_INPUT.xlsx
+│   │   ├── FESMADM2_CaseStudy_LPI_a0_5_INPUT.xlsx
+│   │   └── FESMADM2_CaseStudy_LPI_a1_INPUT.xlsx
+│   │
+│   └── output/
+│       ├── FESMADM2_CaseStudy_LPI_a0_v1_1_0.xlsx
+│       ├── FESMADM2_CaseStudy_LPI_a0_5_v1_1_0.xlsx
+│       └── FESMADM2_CaseStudy_LPI_a1_v1_1_0.xlsx
+│
+├── benchmark/
+│   └── fuzzy_topsis/
+│       └── FESMADM2_Fuzzy_TOPSIS_Benchmark_v1_1_0_OUTPUT.xlsx
+│
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+└── .gitignore
+```
 
-FESMADM2_CaseStudy_LPI_a0.5_v1_1_0.xlsx
-Output file for the LPI case study at α = 0.5.
-
-FESMADM2_CaseStudy_LPI_a1_v1_1_0.xlsx
-Output file for the LPI case study at α = 1.
-
-FES_MADM_II_all_figures_standalone_v1_1_0.R
-Standalone R script with embedded data for reproducing all manuscript figures except the conceptual workflow diagram.
-
-FESMADM2_Fuzzy_TOPSIS_Benchmark_standalone_v1_1_0.R
-Standalone R script with embedded data for the fuzzy TOPSIS benchmark.
-
-FESMADM2_Fuzzy_TOPSIS_Benchmark_v1_1_0_OUTPUT.xlsx
-Static output file containing the fuzzy TOPSIS benchmark results and rank-concordance calculations.
-
-README.md
-Repository description and reproducibility information.
-
-CHANGELOG.md
-Version history.
 
 LICENSE
 MIT License.
